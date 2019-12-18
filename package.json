@@ -1,0 +1,51 @@
+{
+  "name": "@ggoodman/ts-lab",
+  "version": "0.0.0",
+  "description": "An opinionated wrapper over @hapi/lab with typescript and disposables support",
+  "main": "dist/dist-main/index.js",
+  "transforms": "dist/dist-main/transforms.js",
+  "types": "./dist/dist-main/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "ts-lab": "./bin/ts-lab"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "rollup -c",
+    "prepack": "npm run build",
+    "preversion": "npm run build && npm run test",
+    "test": "./bin/ts-lab -fSv"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggoodman/ts-lab.git"
+  },
+  "keywords": [],
+  "author": "Geoff Goodman <geoff@goodman.dev> (https://geoff@goodman.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ggoodman/ts-lab/issues"
+  },
+  "homepage": "https://github.com/ggoodman/ts-lab#readme",
+  "dependencies": {
+    "@hapi/code": "^7.0.0",
+    "@hapi/lab": "^21.0.0",
+    "ts-primitives": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.19",
+    "@wessberg/rollup-plugin-ts": "^1.1.80",
+    "prettier": "^1.19.1",
+    "rollup": "^1.27.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^3.7.3"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}
