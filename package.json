@@ -1,6 +1,6 @@
 {
   "name": "@ggoodman/ts-lab",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An opinionated wrapper over @hapi/lab with typescript and disposables support",
   "main": "dist/dist-main/index.js",
   "transforms": "dist/dist-main/transforms.js",
