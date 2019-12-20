@@ -43,6 +43,9 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "typescript": "^3.7.3"
   },
+  "peerDependencies": {
+    "typescript": "^3.7.3"
+  },
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,
